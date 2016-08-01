@@ -6,4 +6,4 @@ RUN apt-get update && \
 COPY run_script.sh /run_script.sh
 RUN chmod +x /run_script.sh
 VOLUME /data
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/run_script.sh"]
